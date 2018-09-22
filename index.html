@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+                <title>You'll be okay.</title>
+
+                <link rel="stylesheet" href="css/reveal.css">
+                <link rel="stylesheet" href="css/theme/black.css">
+
+                <!-- Theme used for syntax highlighting of code -->
+                <link rel="stylesheet" href="lib/css/zenburn.css">
+
+                <!-- Printing and PDF exports -->
+                <script>
+                        var link = document.createElement( 'link' );
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css';
+                        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+                        document.getElementsByTagName( 'head' )[0].appendChild( link );
+                </script>
+
+                <style>
+                    .btn {
+                        display: block;
+                        overflow: hidden;
+                        margin: 20px auto;
+                        border-width: 0;
+                        outline: none;
+                        border-radius: 2px;
+                        box-shadow: 0 1px 4px rgba(0,0,0,.6);
+                        background-color: #30d5c8;
+                        color: #ecf0f1;
+                        transition: background-color .3s;
+                    }
+
+                    .btn:hover, .btn:focus {
+                          background-color: #89cff0;
+                    }
+
+                    .btn span {
+                        font-size: 1.5em;
+                        display: block;
+                        padding: 12px 24px;
+                    }
+                </style>
+        </head>
+        <body>
+                <div class="reveal">
+                        <div class="slides">
+                                <section>
+                                    <h1>Are you okay?</h1>
+                                    <button class="btn" onclick="Reveal.next()"><span>Let's Check</span></button>
+                                </section>
+                                <section>
+                                    <h1>Are you still breathing?</h1>
+                                    <section>
+                                    <button class="btn" onclick="Reveal.next()"><span>Let's Check</span></button>
+                                    </section>
+
+                                    <section data-autoslide="1000">Inhale...</section>
+
+                                    <section data-autoslide="1000">5</section>
+                                    <section data-autoslide="1000">4</section>
+                                    <section data-autoslide="1000">3</section>
+                                    <section data-autoslide="1000">2</section>
+                                    <section data-autoslide="1000">1</section>
+
+                                    <section data-autoslide="2000">Exhale.</section>
+                                    <section data-autoslide="2000">Good!</section>
+                                </section>
+                                <section>
+                                    <h1>Are you still on the ground?</h1>
+                                    <section>
+                                    <button class="btn" onclick="Reveal.next()"><span>Let's Check</span></button>
+                                    </section>
+
+                                    <section data-autoslide="3000">Push down with your feet</section>
+
+                                    <section data-autoslide="3000">Keep going</section>
+                                    <section data-autoslide="3000">Push hard</section>
+                                    <section data-autoslide="3000">Focus on how the ground feels</section>
+                                    <section data-autoslide="3000">Just a bit longer</section>
+
+                                    <section data-autoslide="2000">And release.</section>
+                                    <section data-autoslide="2000">Good!</section>
+                                </section>
+                                <section>
+                                    <h1>Can you still smile?</h1>
+                                    <section>
+                                    <button class="btn" onclick="Reveal.next()"><span>Let's Check</span></button>
+                                    </section>
+                                    <section data-autoslide="2000">Ready...</section>
+                                    <section data-autoslide="2000">Smile!</section>
+                                    <section data-autoslide="2000">Feels good, right?</section>
+                                    <section data-autoslide="2000">Keep going!</section>
+                                    <section data-autoslide="2000">:)</section>
+                                    <section data-autoslide="2000">Good!</section>
+                                </section>
+                                <section>
+                                    <h1>You are going to be okay.</h1>
+                                    <section data-autoslide="2000">Even if it might not feel like it right now.</section>
+                                    <section data-autoslide="1000" class="fragment fade-in">
+                                        <p data-autoslide="1000" class="fragment fade-in">Just keep on</p>
+                                        <ul>
+                                            <li data-autoslide="1000" class="fragment fade-in">Breathing</li>
+                                            <li data-autoslide="1000" class="fragment fade-in">Standing</li>
+                                            <li data-autoslide="2000" class="fragment fade-in">Smiling</li>
+                                        </ul>
+                                    </section>
+                                    <section>I hope this helped. <br> -<a target="_blank" href="http://www.wastevensv.com">Billy</a></section>
+                                </section>
+                        </div>
+                </div>
+
+                <script src="lib/js/head.min.js"></script>
+                <script src="js/reveal.js"></script>
+
+                <script>
+                        // More info https://github.com/hakimel/reveal.js#configuration
+                        Reveal.initialize({
+                                history: false,
+                                autoSlideStoppable: false,
+                                controls: false,
+
+                                // More info https://github.com/hakimel/reveal.js#dependencies
+                                dependencies: [
+                                        { src: 'plugin/markdown/marked.js' },
+                                        { src: 'plugin/markdown/markdown.js' },
+                                        { src: 'plugin/notes/notes.js', async: true },
+                                        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                                ]
+                        });
+                </script>
+        </body>
+</html>
