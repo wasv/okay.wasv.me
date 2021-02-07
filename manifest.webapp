@@ -10,12 +10,12 @@
 	
 	"icons": [
 		{
-			"src": "images/favicon256.png",
+			"src": "images/favicon/favicon256.png",
 			"sizes": "256x256",
 			"type": "image/png",
 			"purpose": "any"
 		}, {
-			"src": "images/favicon256_maskable.png",
+			"src": "images/favicon/favicon256_maskable.png",
 			"sizes": "256x256",
 			"type": "image/png",
 			"purpose": "maskable"
