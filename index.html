@@ -26,6 +26,12 @@
                         link.type = 'text/css';
                         link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
                         document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+                    if (navigator.serviceWorker && window.Cache && Cache.prototype.addAll) {
+                        navigator.serviceWorker.register('/service_worker.js');
+                    } else {
+                    	console.log('Service worker caching not supported.');
+                    }
                 </script>
 
                 <style>
