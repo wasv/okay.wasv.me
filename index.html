@@ -6,6 +6,14 @@
 
                 <title>You'll be okay.</title>
 
+                <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+                <link rel="icon" href="images/favicon/favicon256.png">
+				<link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-precomposed.png" />
+                <link rel="manifest" href="manifest.webapp" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <meta name="mobile-web-app-capable" content="yes" />
+                <meta name="theme-color" content="#222222" />
+
                 <link rel="stylesheet" href="css/reveal.css">
                 <link rel="stylesheet" href="css/theme/black.css">
 
@@ -19,6 +27,12 @@
                         link.type = 'text/css';
                         link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
                         document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+                    if (navigator.serviceWorker && window.Cache && Cache.prototype.addAll) {
+                        navigator.serviceWorker.register('/service_worker.js');
+                    } else {
+                    	console.log('Service worker caching not supported.');
+                    }
                 </script>
 
                 <style>
@@ -115,10 +129,10 @@
                                     <section>
                                         Please note, I'm not a mental health professional or counselor. <br>
                                         If you are in urgent need of counseling, do not contact me for help. <br>
-                                        Please, <a href="https://helpnow.talkspace.com">seek professional help</a> instead. <br>
+                                        Please, <a target="_blank" href="https://helpnow.talkspace.com">seek professional help</a> instead. <br>
                                         <br>
                                         I'd still love to know if you like this site. <br>
-                                        You can email me at <a href="mailto:okay@wasv.me?subject=I'm Okay.">okay@wasv.me</a>. <br>
+                                        You can email me at <a target="_blank" href="mailto:okay@wasv.me?subject=I'm Okay.">okay@wasv.me</a>. <br>
                                         -<a target="_blank" href="http://www.wasv.me">Billy</a>
                                     </section>
                                 </section>
