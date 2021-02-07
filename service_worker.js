@@ -12,6 +12,7 @@ self.addEventListener('install', function (ev) {
 				'/images/favicon/favicon.ico',
 				'/images/favicon/favicon256.png',
 				'/images/favicon/favicon256_maskable.png',
+				'/images/favicon/favicon512.png',
 				'/js/reveal.js',
 				'/lib/font/source-sans-pro/source-sans-pro.css',
 				'/lib/font/source-sans-pro/source-sans-pro-regular.eot',
